@@ -14,15 +14,50 @@ We use Baidu Cloud Disk to share the datasets we use:: https://pan.baidu.com/s/1
 ```shell
 ```
 
-### Train
+### Downstream tasks
+
+#### Train
+Binding site identification (init with pre-trained weight):
+```shell
+python train_site.py --ckpt ./checkpoints/ckpt-last.pth
+```
+
+Protein-protein interaction prediction (init with pre-trained weight):
+```shell
+python train_search.py --ckpt ./checkpoints/ckpt-last.pth
+```
+
+
 Ligand-binding pocket classification (init with pre-trained weight):
 ```shell
 python train_ligand.py --ckpt ./checkpoints/ckpt-last.pth
 ```
 
 
-### Inference
-Ligand-binding pocket classification(scratch):
+#### Inference
+Binding site identification (scratch):
+```shell
+python test_site.py --checkpoint ./checkpoint/Transformer_site_batch32_yuanshi_epoch107
+```
+
+Binding site identification:
+```shell
+python test_site.py --checkpoint ./checkpoint/Transformer_site_batch32_yuanshi_pre6.11_epoch27.pth
+```
+
+
+Protein-protein interaction prediction (scratch):
+```shell
+python test_search.py --checkpoint 
+```
+
+Protein-protein interaction prediction:
+```shell
+python test_search.py --checkpoint 
+```
+
+
+Ligand-binding pocket classification (scratch):
 ```shell
 python test_ligand.py --checkpoint ./checkpoints/Transformer_ligand_downsample512_group768size16_new_epoch395.pth
 ```
@@ -54,3 +89,7 @@ If you find this code useful for your work or use it in your project, please con
 
 ### Acknowledgments
 In this project we use (parts of) the official implementations of the followin works:
+- [dMaSIF](https://github.com/FreyrS/dMaSIF) 
+- [Point-MAE](https://github.com/Pang-Yatian/Point-MAE) 
+- [MaSIF](https://github.com/LPDI-EPFL/masif) 
+ We thank the respective authors for open sourcing their methods. 
