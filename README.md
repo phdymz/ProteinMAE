@@ -48,12 +48,12 @@ python test_site.py --checkpoint ./checkpoint/Transformer_site_batch32_yuanshi_p
 
 Protein-protein interaction prediction (scratch):
 ```shell
-python test_search.py --checkpoint 
+python test_search.py --checkpoint ./checkpoint/Transformer_search_batch32_group512_size16_downsample512_6.15_epoch493.pth
 ```
 
 Protein-protein interaction prediction:
 ```shell
-python test_search.py --checkpoint 
+python test_search.py --checkpoint ./checkpoint/Transformer_search_batch32_pre_group512_size16_downsample512_6.16_epoch382.pth
 ```
 
 
@@ -92,4 +92,5 @@ In this project we use (parts of) the official implementations of the followin w
 - [dMaSIF](https://github.com/FreyrS/dMaSIF) 
 - [Point-MAE](https://github.com/Pang-Yatian/Point-MAE) 
 - [MaSIF](https://github.com/LPDI-EPFL/masif) 
+
  We thank the respective authors for open sourcing their methods. 
