@@ -6,7 +6,7 @@ Official PyTorch implementation of  "ProteinMAE: Masked Autoencoder for Protein 
 
 ### Dataset 
 
-We use Baidu Cloud Disk to share the datasets we use:: https://pan.baidu.com/s/1lkq4g5TlRz3tja9_LsQGfQ?pwd=data Password: data 
+We use Baidu Cloud Disk to share the datasets we use: https://pan.baidu.com/s/1lkq4g5TlRz3tja9_LsQGfQ?pwd=data Password: data 
 
 
 ### Pre-Training
