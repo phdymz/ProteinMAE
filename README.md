@@ -12,6 +12,7 @@ We use Baidu Cloud Disk to share the datasets we use:: https://pan.baidu.com/s/1
 ### Pre-Training
 
 ```shell
+python main.py --config cfgs/pretrain_protein.yaml --num_workers 8
 ```
 
 ### Downstream tasks
