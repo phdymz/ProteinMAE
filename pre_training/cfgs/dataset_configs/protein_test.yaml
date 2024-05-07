@@ -1,0 +1,3 @@
+NAME: ProteinPretraining
+DATA_PATH: data/protein-pretraining
+N_POINTS: 30000

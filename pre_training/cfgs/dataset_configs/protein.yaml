@@ -1,0 +1,4 @@
+NAME: ProteinPretraining
+DATA_PATH: /media/ymz/11c16692-3687-420b-9787-72a7f9e3bdaf/Protein/Pretrain_processed
+N_POINTS: 2048
+AUG_NOISE: 0.005
